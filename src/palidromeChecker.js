@@ -6,7 +6,7 @@ const PalidromeChecker = () => {
   console.log({ stringInput });
 
   const isPalidrome = () => {
-    //check input is all lowercase
+    
     let reversed = stringInput.toLowerCase().split("").reverse().join("");
 
     console.log(
