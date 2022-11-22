@@ -1,11 +1,12 @@
-import './App.css';
+import "./App.css";
+import PalidromeChecker from "./palidromeChecker";
 
 const App = () => {
   return (
     <div className="App">
-     {console.log("hello world")}
+      <PalidromeChecker />
     </div>
   );
-}
+};
 
 export default App;
