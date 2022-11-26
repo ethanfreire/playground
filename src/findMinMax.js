@@ -1,12 +1,11 @@
 import { useState } from "react";
 
 const FindMinMax = () => {
+  //check array bigger than 1, not 0,
   const [inputString, setInputString] = useState("");
   const [minimum, setMinimum] = useState("");
   const [maximum, setMaximum] = useState("");
-  console.log({ inputString });
-
-  //check arrary bigger than 1, not 0,
+  //console.log({ inputString });
 
   const findMin = () => {
     const inputArray = inputString.split(",");
@@ -14,8 +13,8 @@ const FindMinMax = () => {
       return +entry;
     });
     const minNumber = Math.min(...numberArray);
-    console.log(`you hit the findMin method ${JSON.stringify(numberArray)}`);
 
+    console.log(`you hit the findMin method ${JSON.stringify(numberArray)}`);
     return setMinimum(minNumber);
   };
   const findMax = () => {
@@ -24,8 +23,8 @@ const FindMinMax = () => {
       return +entry;
     });
     const maxNumber = Math.max(...numberArray);
-    console.log(`you hit the findMax method ${JSON.stringify(numberArray)}`);
 
+    console.log(`you hit the findMax method ${JSON.stringify(numberArray)}`);
     return setMaximum(maxNumber);
   };
 
